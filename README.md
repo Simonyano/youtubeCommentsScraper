@@ -1,5 +1,5 @@
 # youtubeCommentsScraper
-It is a short tool that helps you scrape the comments section on YouTube videos, using yt-dlp  
+Tool to scrape all comments (including replies) from any public YouTube video.
 
 
 ## Setup Instructions
@@ -21,14 +21,14 @@ myenv\Scripts\activate     # For Windows
 # source myenv/bin/activate # For macOS/Linux
 
 
-Install Requirements
-```bash
+#Install Requirements
+
 pip install -U yt-dlp pandas
 
-Scrape Comments
-```bash
+#Scrape Comments
+
 yt-dlp --write-comments --no-download "https://www.youtube.com/watch?v=VIDEO_ID"
 
-Note: This creates a .info.json file with all comments.
+#Note: This creates a .info.json file with all comments.
 
-To convert from json to csv use the script (convert_to_csv.py) 
+#To convert from json to csv use the script (convert_to_csv.py) 
