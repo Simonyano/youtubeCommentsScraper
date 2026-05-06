@@ -22,10 +22,13 @@ myenv\Scripts\activate     # For Windows
 
 
 Install Requirements
-Bashpip install -U yt-dlp pandas
+```bash
+pip install -U yt-dlp pandas
 
 Scrape Comments
-Bashyt-dlp --write-comments --no-download "https://www.youtube.com/watch?v=VIDEO_ID"
+```bash
+yt-dlp --write-comments --no-download "https://www.youtube.com/watch?v=VIDEO_ID"
 
 Note: This creates a .info.json file with all comments.
 
+To convert from json to csv use the script (convert_to_csv.py) 
